@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Post Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="New York Post - Latest news, sports, metro, opinion and business">
+    <!-- Font for the logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="header-left">
+            <button aria-label="Menu" class="menu-button">
+                <i class="fas fa-bars"></i> <span class="menu-text">SECTIONS</span>
+            </button>
+            <button aria-label="Search" class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <button aria-label="Email" class="email-button">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </div>
+        <div class="header-center">
+            <a href="#" aria-label="New York Post Home" class="logo-link">
+                <h1 class="logo-text">NEW YORK POST</h1>
+            </a>
+        </div>
+        <div class="header-right">
+            <!-- TODO: aggiungere aria-label ? -->
+            <a href="#" class="page-six-button">
+                READ THE<br>LATEST ON <span>Page Six</span>
+            </a>
+        </div>
+    </div>
+    <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+            <li><a href="#">PAGE SIX</a></li>
+            <li><a href="#">SPORTS</a></li>
+            <li><a href="#">METRO</a></li>
+            <li><a href="#">OPINION</a></li>
+            <li><a href="#">BUSINESS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Breaking News -->
+<section class="breaking-news" aria-label="Breaking News">
+    <div class="breaking-container">
+        <div class="breaking-head">
+            <p class="breaking-text">BREAKING NEWS</p>
+        </div>
+        <div class="breaking-content">
+            <p class="breaking-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Promotional Banner -->
+<section class="promo-banner" aria-label="Promotional Content">
+    <div class="promo-container">
+        <div class="promo-item">
+            <img src="https://placehold.co/80x40/FFD700/000000?text=POST+SPORTS+" alt="Post Sports" class="promo-img">
+            <div class="promo-text">
+                <p>Baseball season is here – get Sports+ so you never miss a story. <a href="#" class="promo-link">TRY IT FREE <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+        </div>
+        <div class="promo-item">
+            <img src="https://placehold.co/80x40/E0E0E0/000000?text=MORNING+REPORT" alt="Morning Report" class="promo-img">
+            <div class="promo-text">
+                <p>Start your day with Post top news headlines. <a href="#" class="promo-link">SUBSCRIBE NOW <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+        </div>
+        <div class="promo-item">
+            <img src="https://placehold.co/80x40/E0E0E0/000000?text=RADIO" alt="Post Radio" class="promo-img">
+            <div class="promo-text">
+                <p>Weekdays 8-10am ET the all new Page Six Radio on SiriusXM Stars Channel 9. <a href="#" class="promo-link">LISTEN <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="content-container">
+
+        <div class="content-left">
+            <!-- Main Article -->
+            <article class="main-article">
+                <h2 class="main-headline">'MAIN TITLE'</h2>
+                <div class="article-content">
+                    <div class="article-images">
+                        <img src="https://placehold.co/850x400" alt="Video thumbnail showing a a big news" class="main-img">
+                    </div>
+                    <h3 class="article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    <p class="article-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                </div>
+            </article>
+
+            <!-- Grid of three articles -->
+            <div class="small-articles-container">
+                <article class="small-article">
+                    <div class="small-article-img-container">
+                        <img src="https://placehold.co/250x150" alt="Image showing the first article" class="small-article-img">
+                    </div>
+                    <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                </article>
+
+                <article class="small-article">
+                    <div class="small-article-img-container">
+                        <img src="https://placehold.co/250x150" alt="Image showing the second article" class="small-article-img">
+                    </div>
+                    <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                </article>
+
+                <article class="small-article">
+                    <div class="small-article-img-container">
+                        <img src="https://placehold.co/250x150" alt="Image showing the third article" class="small-article-img">
+                    </div>
+                    <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                </article>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="social-links">
+                <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Share on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" aria-label="Share on YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="covers-section">
+                <h3 class="section-title">COVERS</h3>
+                <p class="section-subtitle">Today's Cover</p>
+                <p class="cover-type">FRONT COVER</p>
+                <p class="cover-action">FLIP FOR BACK COVER</p>
+                <div class="cover-image">
+                    <img src="https://placehold.co/200x300" alt="Today's Front Cover" class="cover-img">
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- TODO: remove this section -->
+    <!-- Secondary News -->
+    <section class="secondary-news">
+        <article class="news-item breaking">
+            <div class="news-img-container">
+                <img src="https://placehold.co/200x150" alt="Sports player in action" class="news-img">
+            </div>
+            <div class="news-content">
+                <span class="breaking-label">BREAKING</span>
+                <span class="category-label">NEW YORK RANGERS</span>
+                <h3 class="news-title">Rangers star accused of sexual assault by team employee in shocking lawsuit</h3>
+            </div>
+        </article>
+        <!-- Additional news items would go here -->
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <p>&copy; 2025 NYP Holdings, Inc. All Rights Reserved</p>
+        <nav aria-label="Footer Navigation">
+            <ul class="footer-links">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Your Ad Choices</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
