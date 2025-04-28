@@ -499,6 +499,20 @@ button {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 2rem;
+        border-top: 1px solid var(--gray);
+        padding-top: 1rem;
+    }
+}
+
 /* ----- Breaking News ----- */
 @media (max-width: 700px) {
     .breaking-container {
