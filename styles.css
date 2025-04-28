@@ -301,23 +301,14 @@ button {
 .small-articles-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.4rem;
     margin: 1rem auto;
     border-bottom: 2px solid var(--dark-gray);
     padding-bottom: 1.5rem;
 }
 
 .small-article {
-    padding: 0.5rem;
     position: relative;
-}
-
-.small-article:first-child {
-    padding-left: 0;
-}
-
-.small-article:last-child {
-    padding-right: 0;
 }
 
 /* Dividers for small articles */
@@ -325,15 +316,15 @@ button {
     content: "";
     position: absolute;
     top: 3%;
-    right: -0.5rem;
+    right: -0.7rem;
     height: 90%;
     width: 1px;
     background-color: var(--dark-gray);
 }
 
 .small-article-img-container {
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    aspect-ratio: 250/150;
 }
 
 .small-article-img {
