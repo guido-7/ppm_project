@@ -273,7 +273,7 @@ button {
 
 .article-images {
     margin-bottom: 1rem;
-    flex-shrink: 0;
+    flex-shrink: 1;
     width: min(100%, 850px);
     aspect-ratio: 850/400;
 }
@@ -513,7 +513,6 @@ button {
 /* ----- Covers Section ----- */
 .covers-section {
     text-align: center;
-    border-bottom: 2px solid var(--black);
     padding-bottom: 1rem;
 }
 
@@ -522,6 +521,7 @@ button {
     text-align: center;
     padding: 0.5rem;
 }
+
 /* Black line in Covers title */
 .cover-header::before {
     content: "";
@@ -535,14 +535,14 @@ button {
 }
 
 .cover-title {
-    position: relative;   /* Per assicurare che venga posizionato sopra alla linea */
+    position: relative;
     display: inline-block;
-    background-color: var(--white); /* Sfondo bianco che "nasconde" la parte di linea sottostante */
+    background-color: var(--white);
     padding: 5px 15px;
-    color: var(--primary-red);          /* Rosso, in linea con l’estetica */
+    color: var(--primary-red);
     font-weight: bold;
     z-index: 1;
-    border: 2px solid var(--black); /* Riquadro nero intorno alla scritta */
+    border: 2px solid var(--black);
 }
 
 .cover-subtitle {
@@ -566,12 +566,14 @@ button {
     max-width: 200px;
 }
 
-.cover-footer {
+.cover-footer,
+.horoscope-footer {
     position: relative;
     padding: 0.5rem;
 }
 
-.cover-footer::before {
+.cover-footer::before,
+.horoscope-footer::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -582,7 +584,8 @@ button {
     z-index: 0;
 }
 
-.cover-footer-text {
+.cover-footer-text,
+.horoscope-footer-text {
     position: relative;
     display: inline-block;
     background-color: var(--white);
@@ -590,6 +593,133 @@ button {
     font-weight: bold;
     font-size: 0.8rem;
     z-index: 1;
+}
+
+/* ----- Horoscope Section ----- */
+.horoscope-section {
+    text-align: center;
+    border-top: 2px solid var(--black);
+    padding-bottom: 1rem;
+}
+
+.horoscope-header {
+    color: var(--primary-red);
+    font-size: 1.2rem;
+    text-align: start;
+    border-bottom: 1px solid var(--gray);
+}
+
+.horoscope-body {
+    text-align: center;
+}
+
+.horoscope-subtitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+
+.horoscope-image-container {
+    display: flex;
+    justify-content: center;
+    width: min(100%, 150px);
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.horoscope-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.horoscope-content {
+    font-weight: lighter;
+    padding: 1rem;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social-links {
+        width: 100%;
+    }
+
+    .covers-section,
+    .horoscope-section {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 4rem;
+    }
+
+    .cover-header,
+    .horoscope-header {
+        color: var(--primary-red);
+        font-size: 1.2rem;
+        text-align: start;
+        border-bottom: 1px solid var(--gray);
+        margin: 0;
+        padding: 0;
+    }
+
+    .cover-header::before {
+        display: none;
+    }
+
+    .cover-title,
+    .horoscope-title {
+        border: none;
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove top border from horoscope when side by side */
+    .horoscope-section {
+        border-top: none;
+        border-left: 1px solid var(--black);
+    }
+
+    .cover-footer,
+    .horoscope-footer {
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        left: 1rem;
+    }
+}
+
+/* ----- Sidebar ----- */
+@media screen and (max-width: 767px) {
+    .sidebar {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 2rem;
+        border-top: 1px solid var(--gray);
+        padding-top: 1rem;
+    }
+
+    .covers-section,
+    .horoscope-section {
+        width: 100%;
+    }
+
+    /* Re-add top border to horoscope when stacked */
+    .horoscope-section {
+        border-top: 2px solid var(--black);
+        border-left: none;
+    }
 }
 
 /* Secondary News */
@@ -777,15 +907,6 @@ button {
         padding: 0;
         flex-grow: 1;
         font-size: 1rem;
-    }
-
-    /* ----- Sidebar ----- */
-    .sidebar {
-        border-left: none;
-        padding-left: 0;
-        margin-top: 2rem;
-        border-top: 1px solid var(--gray);
-        padding-top: 1rem;
     }
 }
 
