@@ -431,7 +431,7 @@ button {
     .grid-small-article {
         padding-left: 0;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
     }
 
@@ -890,7 +890,6 @@ button {
         top: auto;
     }
 
-    /* Adjust small article layout */
     .small-article {
         display: flex;
         padding: 0;
