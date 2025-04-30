@@ -377,7 +377,7 @@ button {
 
 .grid-medium-article-img-container {
     margin: 0.5rem 0;
-    width: 500px;
+    width: min(100%, 600px);
     aspect-ratio: 500/300;
 }
 
