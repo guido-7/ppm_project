@@ -113,21 +113,21 @@
                     <div class="small-article-img-container">
                         <img src="https://placehold.co/250x150" alt="Image showing the first article" class="small-article-img">
                     </div>
-                    <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                    <h3 class="small-article__title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
                 </article>
 
                 <article class="small-article small-article_line">
                     <div class="small-article-img-container">
                         <img src="https://placehold.co/250x150" alt="Image showing the second article" class="small-article-img">
                     </div>
-                    <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                    <h3 class="small-article__title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
                 </article>
 
                 <article class="small-article small-article_line">
                     <div class="small-article-img-container">
                         <img src="https://placehold.co/250x150" alt="Image showing the third article" class="small-article-img">
                     </div>
-                    <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                    <h3 class="small-article__title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
                 </article>
             </div>
 
@@ -170,38 +170,45 @@
                         </div>
                     </div>
                     <span class="articles-header__subtitle"><i>COMMON SENSE. NO NONSENSE</i></span>
-                    <a href="#" class="articles-header__link">SEE ALL &gt;</a>
+                    <a href="#" class="articles-header__link">SEE ALL <i class="fas fa-chevron-right"></i></a>
                 </header>
 
                 <div class="small-articles-container">
-                    <article class="small-article small-article_no-lines">
+                    <article class="small-article">
                         <div class="small-article-img-container">
-                            <img src="https://placehold.co/250x150" alt="Image showing the first article"
-                                 class="small-article-img">
+                            <img src="https://placehold.co/250x150" alt="Image showing the first article" class="small-article-img">
                         </div>
-                        <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                        <div class="small-article__content">
+                            <h3 class="article__red-box">live</h3>
+                            <h3 class="small-article__title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                        </div>
                     </article>
 
-                    <article class="small-article small-article_no-lines">
+                    <article class="small-article">
                         <div class="small-article-img-container">
                             <img src="https://placehold.co/250x150" alt="Image showing the first article"
                                  class="small-article-img">
                         </div>
-                        <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                        <div class="small-article__content">
+                            <h3 class="small-article__title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                        </div>
                     </article>
 
-                    <article class="small-article small-article_no-lines">
+                    <article class="small-article">
                         <div class="small-article-img-container">
                             <img src="https://placehold.co/250x150" alt="Image showing the first article"
                                  class="small-article-img">
                         </div>
-                        <h3 class="small-article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                        <div class="small-article__content">
+                            <h3 class="article__red-box article__red-box_inverted-color">exclusive</h3>
+                            <h3 class="small-article__title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                        </div>
                     </article>
                 </div>
 
                 <div class="articles-footer__link_mobile">
                     <div class="articles-footer__line"></div>
-                    <a href="#" class="articles-footer__link-text">SEE ALL &gt;</a>
+                    <a href="#" class="articles-footer__link-text">SEE ALL <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 
@@ -220,7 +227,7 @@
             </div>
 
             <!-- Covers Section -->
-            <div class="covers-section">
+            <div class="covers-section sidebar__section">
                 <header class="cover-header">
                     <h3 class="cover-title">COVERS</h3>
                 </header>
@@ -236,12 +243,12 @@
             </div>
 
             <!-- Horoscopes -->
-            <div class="horoscope-section">
+            <div class="horoscope-section sidebar__section">
                 <header class="horoscope-header">
                     <h3 class="horoscope-title">HOROSCOPES</h3>
                 </header>
                 <main class="horoscope-body">
-                    <p class="horoscope-subtitle">Taurus</p>
+                    <h4 class="horoscope-subtitle">Taurus</h4>
                     <div class="horoscope-image-container">
                         <img src="https://placehold.co/150x150" alt="Taurus Horoscope" class="horoscope-img">
                     </div>

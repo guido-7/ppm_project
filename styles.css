@@ -314,6 +314,26 @@ button {
     color: var(--dark-gray);
 }
 
+.article__red-box {
+    display: inline-block;
+    background-color: var(--primary-red);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    transform: skew(-10deg);
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    height: fit-content;
+    border: 1px solid var(--dark-red);
+}
+
+.article__red-box_inverted-color {
+    background-color: var(--white);
+    color: var(--primary-red);
+}
+
 /* ----- Three Small Articles ----- */
 .small-articles-container {
     display: grid;
@@ -340,6 +360,7 @@ button {
 .small-article-img-container {
     width: 100%;
     aspect-ratio: 250/150;
+    margin: 0.5rem 0;
 }
 
 .small-article-img {
@@ -348,7 +369,16 @@ button {
     object-fit: cover;
 }
 
-/* ----- One M and two S articles ----- */
+.small-article__content {
+    align-items: start;
+    margin: 0.5rem 0;
+}
+
+.small-article__title {
+
+}
+
+/* ========== One M and two S articles ========== */
 .one-m-two-s-articles-container {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -542,7 +572,6 @@ button {
 
 .articles-header__subtitle {
     font-weight: bold;
-
     text-transform: uppercase;
     font-size: 1.1rem;
     margin-left: 10px;
@@ -847,8 +876,7 @@ button {
         padding-top: 1rem;
     }
 
-    .covers-section,
-    .horoscope-section {
+    .sidebar__section {
         width: 100%;
     }
 
@@ -1026,7 +1054,7 @@ button {
         flex-shrink: 0;
     }
 
-    .small-article-title {
+    .small-article__title {
         padding: 0;
         flex-grow: 1;
         font-size: 1rem;
