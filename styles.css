@@ -57,6 +57,10 @@ button {
     margin: 1.5rem 0;
 }
 
+.articles-wrapper {
+    margin: 1.5rem 0;
+}
+
 /* Header Styles */
 .main-header {
     background-color: var(--primary-red);
@@ -541,6 +545,10 @@ button {
     z-index: 2;
     margin: 0 1rem;
     text-transform: uppercase;
+}
+
+.articles-header__label-container-centered {
+    margin: 0 auto;
 }
 
 .articles-header__label-box {
