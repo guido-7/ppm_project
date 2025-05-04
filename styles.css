@@ -274,7 +274,9 @@ button {
     }
 
     .page-six-button{
-        display: none;
+        padding: 0.2rem;
+        font-size: 0.5rem;
+
     }
 }
 
