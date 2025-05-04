@@ -92,7 +92,6 @@ button {
 .search-button,
 .email-button {
     color: var(--white);
-    /*padding: 0.5rem;*/
     padding: clamp(0.25rem, 0.3rem , 0.5rem);
     font-weight: bold;
     display: flex;
@@ -829,6 +828,11 @@ button {
 }
 
 .articles-footer__link-text {
+    margin-right: 1rem;
+    align-self: flex-end;
+}
+
+.articles-footer__link-text_centered {
     margin: auto;
 }
 
@@ -1130,7 +1134,68 @@ button {
     }
 }
 
-/* Secondary News */
+/* ========== NOW ON Sidebar Section ========== */
+.page-six-section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+}
+
+.now-on-header__heading {
+    position: relative;
+}
+
+.now-on-header__heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 4px;
+    background-color: var(--primary-red);
+}
+
+.now-on-header__heading span {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 0 0.3rem;
+    margin: 0.3rem 1rem;
+    position: relative;
+}
+
+.now-on-header__title-section {
+    margin: 0 1rem;
+    font-family: var(--font-page-six), fantasy;
+    font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+    font-weight: lighter;
+}
+
+.now-on-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    gap: 0.5rem;
+}
+
+.now-on-body li {
+    padding-bottom: 0.5rem;
+}
+
+.now-on-body li:not(:last-child) {
+    border-bottom: 1px solid var(--gray);
+}
+
+@media screen and (max-width: 1024px) {
+    .page-six-section {
+        display: none;
+    }
+}
+
+/* -----------------  Secondary News ----------------- */
 .secondary-news {
     margin-top: 2rem;
     border-top: 1px solid var(--gray);
