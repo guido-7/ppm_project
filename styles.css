@@ -1356,7 +1356,9 @@ button {
 }
 
 .post-sports-header__heading {
-    font-size: clamp(0.7rem, 1rem + 1vw, 1.3rem);
+    font-family: var(--font-page-six), fantasy;
+    font-size: clamp(1.2rem, 1.3rem + 1vw, 1.5rem);
+    letter-spacing: 0.7px;
     margin: 0.5rem;
 }
 
@@ -1424,6 +1426,54 @@ button {
     .post-sports-section {
         width: 100%;
         margin: 1rem 0;
+    }
+}
+
+.trending-now-section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+    padding-bottom: 0.5rem;
+}
+
+.trending-now-header {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.trending-now-header__title {
+    padding-left: 1rem;
+    display: inline-block;
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.trending-now-header__title::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-color: var(--dark-red);
+}
+
+.tag-label {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    background-color: var(--primary-red);
+    color: var(--white);
+    font-weight: bold;
+    padding: 0 10px 0 15px;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+    z-index: 2;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .trending-now-section {
+        display: none;
     }
 }
 
