@@ -15,6 +15,7 @@
     --gray: #e0e0e0;
     --dark-gray: #444444;
     --yellow: #FFD62B;
+    --blue: #003b7a;
     --max-width: 1200px;
     --header-height: 60px;
     --nav-height: 40px;
@@ -889,6 +890,125 @@ button {
         text-align: center;
         margin: 0.5rem 0;
     }
+}
+
+/* ========== NY Sports Minute ========== */
+.grid-ny-sports-minute {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.grid-ny-sports-minute__first-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.grid-ny-sports-minute__first-page h3 {
+    margin: 0.5rem 1rem;
+    font-size: clamp(0.8rem, 1.1rem, 1.3rem);
+}
+
+.grid-ny-sports-minute__first-page figure {
+    width: min(100%,700px);
+    aspect-ratio: 322/355;
+}
+
+.grid-ny-sports-minute__first-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-ny-sports-minute {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-ny-sports-minute__first-page {
+        border:2px solid var(--dark-gray);
+        background-color: var(--white);
+    }
+
+    .grid-ny-sports-minute__first-page h3 {
+        display: none;
+    }
+}
+
+.grid-column-articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-article {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 0.7rem;
+    align-items: flex-start;
+    padding: 0;
+    /*margin-bottom: 0.7rem*/
+}
+
+.horizontal-article:not(:last-child) {
+    padding-bottom: 0.35rem;   /* half your gap */
+    margin-bottom: 0.35rem;    /* half your gap */
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.horizontal-article__img-container {
+    position: relative;
+    width: 120px;
+    aspect-ratio: 12/8;
+    flex-shrink: 0;
+}
+
+.horizontal-article__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.number-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-size: 80px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.horizontal-article__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-article__content h3 {
+    color: var(--primary-red);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-article__content p {
+    margin: 0;
+    padding: 0;
 }
 
 /* ========== Sidebar ========== */
