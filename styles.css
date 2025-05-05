@@ -954,12 +954,11 @@ button {
     gap: 0.7rem;
     align-items: flex-start;
     padding: 0;
-    /*margin-bottom: 0.7rem*/
 }
 
 .horizontal-article:not(:last-child) {
-    padding-bottom: 0.35rem;   /* half your gap */
-    margin-bottom: 0.35rem;    /* half your gap */
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.35rem;
     border-bottom: 1px solid var(--dark-gray);
 }
 
@@ -977,6 +976,8 @@ button {
 }
 
 .number-overlay {
+    font-family: Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
     position: absolute;
     top: 0;
     left: 0;
@@ -988,8 +989,10 @@ button {
     padding-left: 10px;
     font-size: 80px;
     font-weight: bold;
-    color: transparent;
     -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
 }
 
