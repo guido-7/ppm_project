@@ -59,6 +59,29 @@ button {
     margin: 1.5rem 0;
 }
 
+.line {
+    height: var(--line-height,1px);
+    background-color: var(--black);
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.line_h4 { --line-height: 4px; }
+
+.button {
+    display: inline-block;
+    background-color: var(--primary-red);
+    color: white;
+    text-align: center;
+    padding: 8px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0.75rem 0;
+    border-radius: 3px;
+}
+
 .articles-wrapper {
     margin: 1.5rem 0;
 }
@@ -1020,6 +1043,10 @@ button {
     border-left: 1px solid var(--gray);
 }
 
+.sidebar__section {
+    margin-bottom: 1.5rem;
+}
+
 .social-links,
 .footer__header_social {
     display: flex;
@@ -1051,7 +1078,6 @@ button {
 /* ----- Covers Section ----- */
 .covers-section {
     text-align: center;
-    padding-bottom: 1rem;
 }
 
 .cover-header {
@@ -1137,7 +1163,6 @@ button {
 .horoscope-section {
     text-align: center;
     border-top: 2px solid var(--black);
-    padding-bottom: 1rem;
 }
 
 .horoscope-header {
@@ -1174,7 +1199,6 @@ button {
 }
 
 .horoscope-content {
-    /*font-weight: lighter;*/
     padding: 1rem;
     text-align: left;
 }
@@ -1193,12 +1217,11 @@ button {
     .horoscope-section {
         width: 50%;
         box-sizing: border-box;
-        padding: 0 1rem;
+        padding: 0 0 4rem 0;
 
         display: flex;
         flex-direction: column;
         position: relative;
-        padding-bottom: 4rem;
     }
 
     .cover-header,
@@ -1317,6 +1340,90 @@ button {
 @media screen and (max-width: 1024px) {
     .page-six-section {
         display: none;
+    }
+}
+
+/* ----- Post Sport + ----- */
+.post-sports-section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+}
+
+.post-sports-header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.post-sports-header__heading {
+    font-size: clamp(0.7rem, 1rem + 1vw, 1.3rem);
+    margin: 0.5rem;
+}
+
+.post-sports-header p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.post-sports-header span {
+    font-size: clamp(0.6rem, 0.6rem + 1vw, 0.9rem);
+}
+
+.post-sports-body {
+    margin: 0.5rem;
+    background-color: var(--white);
+}
+
+.columnist-article {
+    position: relative;
+    margin: 2rem 1rem;
+    padding-top: 10px;
+}
+
+.columnist-article__title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.columnist-article__figure {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -30px;
+    z-index: 2;
+}
+
+.columnist-article__figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.columnist-footer {
+    text-align: center;
+}
+
+.login-text {
+    padding-bottom: 0.7rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.login-text:hover {
+    color: var(--dark-red);
+}
+
+.login-text a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .post-sports-section {
+        width: 100%;
+        margin: 1rem 0;
     }
 }
 
