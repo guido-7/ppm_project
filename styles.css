@@ -26,7 +26,7 @@
 
 /* Base Styles */
 body {
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), sans-serif;
     line-height: 1.6;
     color: var(--black);
     background-color: var(--white);
@@ -1107,6 +1107,20 @@ button {
     }
 }
 
+.ul__gap-border {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
+}
+
+.ul__gap-border li:not(:last-child) {
+    margin-top: 0.425rem;
+    padding-bottom: 0.425rem;
+    border-bottom: 1px solid var(--dark-gray);
+    margin-bottom: 0.425rem;
+}
+
 /* ========== Sidebar ========== */
 .sidebar {
     padding-left: 1rem;
@@ -1595,7 +1609,7 @@ button {
 
 .footer__header_logo {
     margin: 0 1rem 0 0;
-    font-family: var(--font-logo);
+    font-family: var(--font-logo), fantasy;
 }
 
 .footer__header_social {
