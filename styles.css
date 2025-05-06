@@ -1300,7 +1300,7 @@ button {
         font-size: 1.2rem;
         text-align: start;
         border-bottom: 1px solid var(--gray);
-        margin: 0;
+        margin: 0 1rem;
         padding: 0;
     }
 
@@ -1320,6 +1320,7 @@ button {
     .horoscope-section {
         border-top: none;
         border-left: 1px solid var(--black);
+        padding: 0 0.5rem;
     }
 
     .cover-footer,
