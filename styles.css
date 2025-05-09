@@ -95,6 +95,13 @@ button {
     margin: 1.5rem 0;
 }
 
+/* TODO: add a class for center image in mobile screen */
+.mobile__center-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* ========== Header ========== */
 .main-header {
     background-color: var(--primary-red);
@@ -125,7 +132,7 @@ button {
 .search-button,
 .email-button {
     color: var(--white);
-    padding: clamp(0.25rem, 0.3rem , 0.5rem);
+    padding: clamp(0.25rem, 0.35rem , 0.5rem);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -251,7 +258,6 @@ button {
             -7px 5px 0 var(--black);
     }
 
-
     .page-six-button{
         font-size: 0.7rem;
         padding: 0.5rem 0.5rem;
@@ -263,7 +269,6 @@ button {
     }
 }
 
-/* Small screens */
 @media screen and (max-width: 480px) {
     .header-container {
         padding: 0 0.5rem;
@@ -309,11 +314,9 @@ button {
     .page-six-button{
         padding: 0.2rem;
         font-size: 0.5rem;
-
     }
 }
 
-/* Very small screens */
 @media screen and (max-width: 320px) {
     .logo-text {
         letter-spacing: 0;
@@ -376,7 +379,6 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-    /* Navigation */
     .nav-links {
         justify-content: center;
     }
@@ -387,7 +389,7 @@ button {
     }
 }
 
-/* Breaking News */
+/* ----- Breaking News ----- */
 .breaking-news {
     max-width: var(--max-width);
     margin: 1.5rem auto;
@@ -414,7 +416,6 @@ button {
     flex-grow: 1;
 }
 
-/* ----- Breaking News ----- */
 @media (max-width: 700px) {
     .breaking-container {
         flex-direction: column;
@@ -769,6 +770,7 @@ button {
         border-bottom: 1px solid var(--dark-gray);
     }
 
+    /*TODO: spostare in alto e cambiare nome, deve iniziare con tablet/mobile*/
     .order_1 {
         order: 1;
     }
@@ -1119,6 +1121,16 @@ button {
     padding-bottom: 0.425rem;
     border-bottom: 1px solid var(--dark-gray);
     margin-bottom: 0.425rem;
+}
+
+.grid-sidebar {
+    margin: 1rem;
+    padding: 1rem;
+    border: 3px solid var(--black);
+}
+
+#grid-sidebar__figure-margin {
+    margin-top: 0.5rem;
 }
 
 /* ========== Sidebar ========== */
