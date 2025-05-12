@@ -4,7 +4,7 @@ This project is a **static frontend clone** of the [New York Post](https://nypos
 
 ## 🌍 Live Preview
 
-Explore the live version here: [New York Post Clone](https://guido-7.github.io/ppm_project/)
+Explore the live version here: [https://guido-7.github.io/ppm_project/](https://guido-7.github.io/ppm_project/)
 
 ## ✨ Key Features
 
